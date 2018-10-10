@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 from crudlfap.settings import CRUDLFAP_APPS
-from crudlfap.settings import CRUDLFAP_TEMPLATE_BACKEND 
+from crudlfap.settings import CRUDLFAP_TEMPLATE_BACKEND
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'post',
-]  + CRUDLFAP_APPS
+    'student',
+] + CRUDLFAP_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
